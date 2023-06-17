@@ -1,6 +1,10 @@
 module.exports = {
-  extends: ["plugin:prettier/recommended"],
-  rules: {
-    "prettier/prettier": "error",
-  },
+  tabWidth: 2,
+  printWidth: 100,
+  semi: true,
+  singleQuote: true,
+  trailingComma: 'none',
+  bracketSpacing: true,
+  bracketSameLine: false,
+  arrowParens: 'always'
 };

@@ -1,0 +1,22 @@
+{
+  "engines": {
+    "node": "^18.16",
+    "pnpm": "^8.6"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "pnpm run build",
+    "build": "lerna run build",
+    "test": "lerna run test",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lerna": "^7.0.2",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8"
+  },
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
+  }
+}

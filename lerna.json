@@ -1,0 +1,5 @@
+{
+  "npmClient": "pnpm",
+  "version": "independent",
+  "ignoreChanges": ["pnpm-lock.yaml"]
+}

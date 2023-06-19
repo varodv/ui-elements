@@ -22,7 +22,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: lts/hydrogen
+          node-version: ^18.16
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
@@ -34,3 +34,6 @@ jobs:
 
       - name: Run linter
         run: pnpm run lint:check
+
+      - name: Run tests
+        run: pnpm run test
